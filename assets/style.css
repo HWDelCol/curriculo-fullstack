@@ -34,6 +34,14 @@ section{
     box-shadow: 0 0 10px rgba(210,175,55,0.3);
 }
 
+.sub-card {
+    background-color: rgba(255, 255, 255, 0.02); /* fundo quase transparente */
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #d4af37; /* borda inferior dourada */
+}
+
 /*Cabeçalho*/
 h1{
     color: #d4af37;

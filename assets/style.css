@@ -42,6 +42,10 @@ section{
     border-bottom: 1px solid #d4af37; /* borda inferior dourada */
 }
 
+.sub-card:hover{
+    box-shadow: 0 0 10px rgba(210,175,55,0.3);
+}
+
 /*Cabeçalho*/
 h1{
     color: #d4af37;
@@ -79,4 +83,29 @@ a{
 
 a:hover{
     text-decoration: underline;
+}
+
+/*Responsividade inicial*/
+@media (max-width: 600px) {
+    section{
+        width: 80%;
+        padding: 10px;
+    }
+
+    h1{
+        font-size: 28px;
+    }
+
+    h2{
+        font-size: 20px;
+    }
+.sub-card{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+p,li{
+    font-size: 14px;
+}
+
 }

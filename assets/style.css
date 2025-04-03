@@ -25,6 +25,19 @@ section{
     width: 80%;
     max-width: 800px;
     padding: 20px;
+    animation: aparecer 1s ease forwards;
+    opacity: 0;
+}
+
+@keyframes aparecer {
+    from{
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 .card {
@@ -35,15 +48,17 @@ section{
 }
 
 .sub-card {
-    background-color: rgba(255, 255, 255, 0.02); /* fundo quase transparente */
+    background-color: rgba(255, 255, 255, 0.02);
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 15px;
-    border-bottom: 1px solid #d4af37; /* borda inferior dourada */
+    border-bottom: 1px solid #d4af37;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .sub-card:hover{
-    box-shadow: 0 0 10px rgba(210,175,55,0.3);
+    transform: scale(1.02);
+    box-shadow: 0 0 12px rgba(212, 175, 55, 0.3);
 }
 
 /*Cabeçalho*/
@@ -79,10 +94,12 @@ ul{
 a{
     color: #d4af37;
     text-decoration: none;
+    transition: all 0.3s ease;
 }
 
 a:hover{
     text-decoration: underline;
+    color: #fff;
 }
 
 /*Responsividade inicial*/
